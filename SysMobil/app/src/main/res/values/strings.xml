@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">Aplikacja</string>
+    <string name="title_activity_maps">Mapa</string>
+    <string name="stop">Zakończ</string>
+    <string name="distance">Dystans</string>
+    <string name="trainingTime">Czas</string>
+    <string name="statistics">Statystyka treningu</string>
+    <string name="trainingLabel">Wspomaganie treningu</string>
+    <string name="trainingBegin">Rozpocznij</string>
+    <string name="title_activity_stat">Statystyka</string>
+    <string name="close">Zamknij</string>
+    <string name="back_to_menu">Powrót do menu</string>
+    <string name="trainingHistory">Poprzednie treningi</string>
+    <string name="back">Powrót</string>
+</resources>

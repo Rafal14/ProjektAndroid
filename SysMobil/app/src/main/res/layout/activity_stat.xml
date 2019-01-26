@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".StatActivity">
+
+    <TextView
+        android:id="@+id/statLabel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20sp"
+        android:layout_marginStart="20sp"
+        android:layout_marginEnd="20sp"
+        android:textColor="@android:color/black"
+        android:textColorLink="@android:color/black"
+        android:textSize="28sp"
+        android:hint="@string/statistics" />
+    <TextView
+        android:id="@+id/timeLabel"
+        android:layout_width="0sp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40sp"
+        android:layout_marginStart="20sp"
+        android:textColor="@android:color/black"
+        android:textColorLink="@android:color/black"
+        android:textSize="24sp"
+        android:text="@string/trainingTime"
+        android:layout_below="@id/statLabel"
+        android:layout_alignParentStart="true"
+        android:layout_toStartOf="@+id/time" />
+    <Chronometer
+        android:id="@+id/time"
+        android:layout_width="140sp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40sp"
+        android:layout_marginStart="20sp"
+        android:layout_marginEnd="20sp"
+        android:textColor="@android:color/black"
+        android:textSize="24sp"
+        android:layout_below="@id/statLabel"
+        android:layout_alignParentEnd="true" />
+    <TextView
+        android:id="@+id/distLabel"
+        android:layout_width="0sp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40sp"
+        android:layout_marginStart="20sp"
+        android:textColor="@android:color/black"
+        android:textColorLink="@android:color/black"
+        android:textSize="24sp"
+        android:text="@string/distance"
+        android:layout_below="@id/timeLabel"
+        android:layout_alignParentStart="true"
+        android:layout_toStartOf="@+id/distText" />
+    <TextView
+        android:id="@+id/distText"
+        android:layout_width="140sp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40sp"
+        android:layout_marginStart="20sp"
+        android:layout_marginEnd="20sp"
+        android:textColor="@android:color/black"
+        android:textSize="24sp"
+        android:layout_below="@id/time"
+        android:layout_alignParentEnd="true" />
+    <Button
+        android:id="@+id/stopBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40sp"
+        android:layout_marginStart="20sp"
+        android:layout_marginEnd="20sp"
+        android:textSize="18sp"
+        android:layout_below="@id/distText"
+        android:layout_alignParentEnd="true"
+        android:text="@string/stop" />
+    <Button
+        android:id="@+id/closeBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="80sp"
+        android:layout_marginStart="20sp"
+        android:layout_marginEnd="20sp"
+        android:textSize="18sp"
+        android:layout_below="@id/stopBtn"
+        android:layout_alignParentEnd="true"
+        android:text="@string/close" />
+</RelativeLayout>
